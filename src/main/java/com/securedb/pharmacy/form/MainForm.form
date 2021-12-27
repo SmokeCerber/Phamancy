@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.securedb.pharmacy.form.MainForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="719" height="348"/>
+    </constraints>
+    <properties/>
+    <border type="line" title="Сергей Абольянин" title-justification="5" title-position="5">
+      <font name="OCR A Std" size="9" style="0"/>
+      <color color="-15856114"/>
+    </border>
+    <children>
+      <component id="103d1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="4" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="14" style="1"/>
+          <text value="Аптечный Навигатор v1.0"/>
+        </properties>
+      </component>
+      <component id="ec813" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Поиск по Имени клиента"/>
+        </properties>
+      </component>
+      <component id="ed7dd" class="javax.swing.JButton" binding="searchButton">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Поиск"/>
+        </properties>
+      </component>
+      <component id="355d0" class="javax.swing.JButton" binding="editOfficeButton">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="277" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Изменить"/>
+        </properties>
+      </component>
+      <component id="9ae1d" class="javax.swing.JButton" binding="deleteOfficeButton">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Удалить"/>
+        </properties>
+      </component>
+      <component id="e9146" class="javax.swing.JButton" binding="addNewOfficeButton">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Новый заказ"/>
+        </properties>
+      </component>
+      <scrollpane id="51e22">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="280" height="128"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="line"/>
+        <children>
+          <component id="1337a" class="javax.swing.JList" binding="officeList">
+            <constraints/>
+            <properties>
+              <font name="Arial Black" size="14" style="0"/>
+              <model/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="eac7d" class="javax.swing.JButton" binding="clientsButton">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Клиенты"/>
+        </properties>
+      </component>
+      <component id="3f823" class="javax.swing.JTextField" binding="searchField">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="280" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <scrollpane id="aaf34">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11562613"/>
+        </properties>
+        <border type="line" title="Подробнее" title-justification="3">
+          <font/>
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <component id="66f99" class="javax.swing.JTextPane" binding="details">
+            <constraints/>
+            <properties>
+              <contentType value="text/html"/>
+              <editable value="false"/>
+              <font/>
+              <text value="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="5962e" class="javax.swing.JButton" binding="drugsButton">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Лекарства"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
